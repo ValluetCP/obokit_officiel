@@ -4,7 +4,7 @@ require_once('./inc/header.php');
 ?>
 
 <!-- LA CARTE -->
-    <p class="carte_fixe"><a href="">Afficher la carte</a></p>
+    <p class="carte_fixe boxAnim"><a href="">Afficher la carte</a></p>
 <!-- NAV -->
     <nav>
         <a href="#" class="btn">

@@ -94,12 +94,45 @@ h2 span{
 
 .carte_fixe{
     font-family: 'Bebas Neue', sans-serif;
-    color: var(--textNoir);
-    border: 1px solid var(--noirDore);
+    /* border: 1px solid var(--noirDore); */
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 15px;
+    right: 15px;
+    padding: 20px;
+    border-radius: 20px;
 }
+
+.carte_fixe a{
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--textNoir);
+}
+
+/* Animation */
+
+.boxAnim{
+    animation: couleur 3s alternate infinite;
+}
+
+.boxAnim a{
+    animation: couleur 3s alternate infinite;
+}
+
+@keyframes couleur{
+    0%{
+        background-color: var(--beigeDoree);
+        color: var(--noirDore);
+    }
+    50%{
+        background-color: white;
+        color: var(--noirDore);
+    }
+    100%{
+        background-color: var(--noirDore);
+        color: var(--beige);
+    }
+}
+
 /* ----------------------- LA CARTE - FIN----------------------- */
 
 /* ----------------------- NAV - DEBUT----------------------- */
@@ -254,7 +287,7 @@ nav{
     background-image: url(../image/header_bokit2.jpg);
     /* width: 100%;
     height: 916px; */
-    background-position-y: -103px;
+    /* background-position-y: -103px; */
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -264,6 +297,7 @@ nav{
 
 .img_header img{
     width: 1300px;
+    padding-left: 104px;
 }
 
 .navColor{
@@ -1161,6 +1195,11 @@ footer p{
 @media screen and (max-width:1600px) {
 
     /* --- SECTION - (max-width:1600px) --- */
+
+    /* --- HEADER - (max-width:1600px) --- */
+    .img_header img {
+        width: 950px;
+    }
     
     /* --- SECTION 3 MON HISTOIRE - (max-width:1600px)--- */
     .sect3_txt Blockquote {
@@ -1318,6 +1357,11 @@ footer p{
         width: 90%;
         margin-top: 100px;
         margin: auto;
+    }
+
+    /* --- HEADER - (max-width:1210px)--- */
+    .img_header img {
+        width: 870px;
     }
     
 }
