@@ -18,32 +18,27 @@ require_once('./inc/header.php');
         <ul class="listeMenu">
 
             <li class="MenuListItem">
-                <p class="itemListe">notre histoire <br><span>atif saade raconte son chemin jusqu’à vos assiettes</span></p>
+                <a class="itemListe" href="#histoire">notre histoire <br><span>atif saade raconte son chemin jusqu’à vos assiettes</span></a>
             </li>
 
             <li class="MenuListItem">
-                <p class="itemListe">le concept <br>
-                <span>de la street food afro-caribéenne cuisiné avec amour</span></p>
+                <a class="itemListe" href="#concept">le concept <br><span>de la street food afro-caribéenne cuisiné avec amour</span></a>
             </li>
 
             <li class="MenuListItem">
-                <p class="itemListe">notre carte <br>
-                <span>retrouvez toutes nos spécialités</span></p>
+                <a class="itemListe" href="#carte">notre carte <br><span>retrouvez toutes nos spécialités</span></a>
             </li>
 
             <li class="MenuListItem">
-                <p class="itemListe">nous localiser <br>
-                <span>suivez nos déplacements  //  lieux et horaires</span></p>
+                <a class="itemListe" href="#localiser">nous localiser<br><span>suivez nos déplacements  //  lieux et horaires</span></a>
             </li>
 
             <li class="MenuListItem">
-                <p class="itemListe">nos prestations & services <br>
-                <span>o’bokit prend place à vos événements  et facilite vos commandes</span></p>
+                <a class="itemListe" href="#services">nos prestations & services<br><span>o’bokit prend place à vos événements  et facilite vos commandes</span></a>
             </li>
 
             <li class="MenuListItem">
-                <p class="itemListe">nous contacter <br>
-                <span>joignez-nous et restez connecté</span></p>
+                <a class="itemListe" href="#contact">nous contacter<br><span>joignez-nous et restez connecté</span></a>
             </li>
             
         </ul>
@@ -65,7 +60,7 @@ require_once('./inc/header.php');
 
 
 <!-- SECTION 3 - SON HISTOIRE -->
-<div class="section3">
+<div class="section3" id="histoire">
     <div class="container_sect3">
         <div class="sect3_img">
             <img src="./asset/image/atif_saade.jpg" alt="Atif SAADE devant le food truck">
@@ -85,7 +80,7 @@ require_once('./inc/header.php');
 </div>
 
 <!-- SECTION 4 - CONCEPT -->
-<div class="section4">
+<div class="section4" id="concept">
     <!-- TYPO géante -->
     <div class="concept">
         <img src="./asset/image/sect4_concept.png" alt="Typographie géante concept">
@@ -102,7 +97,7 @@ require_once('./inc/header.php');
 </div>
 
 <!-- SECTION 5 - CARTE-->
-<div class="section5">
+<div class="section5" id="carte">
     <div class="container_sect5">
         <h2>Notre<br><span>Carte</span></h2>
 
@@ -401,7 +396,7 @@ require_once('./inc/header.php');
 <p class="menuPdf"><a href="http://" target="_blank" rel="noopener noreferrer">AFFICHER TOUTE LA CARTE</a></p>
 
 <!-- SECTION 6 -->
-<div class="section6">
+<div class="section6" id="localiser">
     <!-- <div class="plante">
             <img src="./asset/image/sect6_plante2.jpg" alt="image végétation">
         </div> -->
@@ -518,7 +513,7 @@ require_once('./inc/header.php');
 </section>
 
 <!-- SECTION 7 -->
-<div class="section7">
+<div class="section7" id="services">
     <div class="sect7_txt">
         <h2>découvrez nos<br><span>prestations & services</span></h2>
         <p>
@@ -556,7 +551,7 @@ require_once('./inc/header.php');
 </div>
 
 <!-- SECTION 9 - CONTACT -->
-<div class="section9">
+<div class="section9" id="contact">
     <div class="container_sect9">
         <div class="contact">
             <div class="contact_img">
