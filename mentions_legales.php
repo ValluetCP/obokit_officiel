@@ -4,6 +4,7 @@
 ?>
 
     <div class="container_mentionsLegales">
+        <div class="bg_nav"></div>
         <div class="sect_mention">
             <h2>o'bokit<br><span>Mentions légales</span></h2>
 
@@ -102,6 +103,9 @@
                     </p>
                 </div>
             </div>
+        </div>
+        <div class="bg_vide">
+
         </div>
     </div>
 

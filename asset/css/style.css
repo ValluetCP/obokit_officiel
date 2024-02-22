@@ -103,6 +103,7 @@ h2 span{
     right: 15px;
     padding: 20px;
     border-radius: 20px;
+    /* z-index: 2; */
 }
 
 .carte_fixe a{
@@ -254,8 +255,8 @@ nav{
 /* MENU BURGER */
 .btn {
     position: fixed;
-    left: 40px;
-    top: 30px;
+    left: 6px;
+    top: 5px;
     text-decoration: none;
     border-radius: 5px;
     width: 90px;
@@ -263,7 +264,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--beigeDoree);
+    /* background: var(--beigeDoree); */
     /* background: rgb(137,131,228); */
     z-index: 1000;
 }
@@ -375,7 +376,10 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--beige2);
+    /* background-color: var(--beige2); */
+    backdrop-filter: blur(1rem);
+    background-color: transparent;
+    z-index: 1;
 }
 
 /* ANIMATION PHRASE D'ACCROCHE */
@@ -397,7 +401,7 @@ nav{
     background: transparent;
     /* background: #2980b9; */
     padding: 0 40px;
-    height: 65px;
+    height: 80px;
     overflow: hidden;
 }
 
@@ -405,7 +409,7 @@ nav{
     text-transform: uppercase;
     /* text-align: center; */
     /* font-size: 40px; */
-    line-height: 65px;
+    line-height: 80px;
 }
 
 .line:first-child{
@@ -416,23 +420,11 @@ nav{
     0%{
         margin-top: 0;
     }
-    16%{
-        margin-top: -60px;
-    }
-    33%{
-        margin-top: -120px;
-    }
     50%{
-        margin-top: -180px;
-    }
-    66%{
-        margin-top: -240px;
-    }
-    82%{
-        margin-top: -300px;
+        margin-top: -80px;
     }
     100%{
-        margin-top: -360px;  
+        margin-top: -160px;
     }
 }
 
@@ -558,9 +550,10 @@ nav{
     margin-top: 100px;
 }
 
-.container_sect5{
+.container_sect5 {
     width: 1190px;
     margin: auto;
+    padding-left: 55px;
 }
 
 .section5 h2 {
@@ -681,6 +674,7 @@ nav{
 
 #filtre li .btnChoix.linkActive{
     color: var(--beige1);
+    margin: 0;
 }
 
 
@@ -948,7 +942,7 @@ figure.hide {
     font-family: 'bebas', sans-serif;
     color: var(--grisMoyen);
     font-size: 38px;
-    font-weight: 300;
+    font-weight: 600;
     margin-bottom: 25px;
     line-height: 40px;
 }
@@ -1026,7 +1020,7 @@ figure.hide {
 
 /* ---------------------------- SECTION BANDE - FIN ---------------------------- */
 
-/* ---------------------------- SECTION 7 PRESTATION - DEBUT ---------------------------- */
+/* ----------------------- SECTION 7 PRESTATION - DEBUT ----------------------- */
 .section7{
     display: grid;
     grid-template-columns: auto 880px;
@@ -1100,7 +1094,7 @@ figure.hide {
 /* ---------------------------- SECTION 8 - FIN ---------------------------- */
 
 
-/* ---------------------------- SECTION 9 - CONTACT - DEBUT ---------------------------- */
+/* ----------------------- SECTION 9 - CONTACT - DEBUT ----------------------- */
 
 .section9{
     background-color: var(--beige2);
@@ -1115,6 +1109,7 @@ figure.hide {
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
+    padding-left: 140px;
 }
 
 .contact_txt{
@@ -1271,9 +1266,13 @@ footer p{
     min-height: 100%;
     background-image: url(../image/mention_bg.png);
     position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 104px 50% auto;
+}
+
+.bg_nav{
+    height: 100%;
+    background-color: var(--beige2);
 }
 
 .sect_mention h2 {
@@ -1288,8 +1287,9 @@ footer p{
 
 .sect_mention {
     background-color: var(--beige2);
-    border-radius: 20px;
+    /* border-radius: 20px; */
     padding: 20px 100px;
+    /* padding-left: 200px; */
 }
 
 .grid_mention{
@@ -1342,6 +1342,7 @@ footer p{
     /* --- SECTION 4 CONCEPT - (max-width:1600px) --- */
     .concept {
         width: 980px;
+        padding-left: 32px;
     }
 
     /* --- SECTION 6 LOCALISATION - (max-width:1600px)--- */
@@ -1351,6 +1352,16 @@ footer p{
 
     .img_bokit {
         top: 220px;
+    }
+
+    /* --- SECTION 7 SERVICES - (max-width:1600px)--- */
+    .section7 {
+        grid-template-columns: auto 560px;
+        height: 835px;
+    }
+    
+    .sect7_img img {
+        width: 382px;
     }
 }
 
@@ -1363,10 +1374,47 @@ footer p{
 
     /* ------------------ SECTION - (max-width:1400px) ------------------ */
 
+    /* --- NAV - (max-width:1400px) --- */
+    
+    nav {
+        border-right: none;
+        border-bottom: 2px solid var(--beige4);
+        width: 100%;
+        height: 104px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .home {
+        transform: rotate(0deg) translateY(0px) translateX(0px);
+    }
+    
+    .navColor {
+        width: 100%;
+        height: 104px;
+        backdrop-filter: blur(0.5rem);
+        background-color: transparent;
+    }
+    
+    .conteneurMenu {
+        transform: translateX(0px);
+    }
+    
+    /* --- HEADER - (max-width:1400px) --- */
+    
+    .carte_fixe {
+        z-index: 2;
+    }
+
+    .img_header img {
+       padding: 0;
+    }
+
     /* --- SECTION 3 MON HISTOIRE - (max-width:1400px) --- */
     .container_sect3 {
         grid-template-columns: 1fr;
-        max-width: 800px;
+        max-width: 1002px;
         padding: 6%;
         grid-gap: 34px;
     }
@@ -1380,6 +1428,7 @@ footer p{
     }
 
     /* --- SECTION 4 CONCEPT- (max-width:1400px) --- */
+
     
     .container_sect4 {
         max-width: 800px;
@@ -1397,10 +1446,25 @@ footer p{
         margin: auto;
     }
     
+    .concept {
+        padding-left: 80px;
+    }
+
     /* --- SECTION 5 CARTE - (max-width:1400px) --- */
     .section5 h2 {
         margin-left: 20px;
     }
+
+    .filtre_ingredient {
+        width: 930px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+
+    .container_sect5 {
+        padding-left: 0px;
+    }
+    
 
     /* --- SECTION 6 LOCALISATION - (max-width:1400px)--- */
 
@@ -1418,7 +1482,14 @@ footer p{
         width: 414px;
     }
 
+     /* --- CONTACT - (max-width:1400px)--- */
+     .container_sect9 {
+        padding-left: 0px;
+    }
 
+    .container_sect9 {
+        padding: 0 30px;
+    }
 }
 
 
@@ -1427,7 +1498,12 @@ footer p{
 
     /* --- SECTION - (max-width:1210px) --- */
 
+
     /* --- SECTION 3 SECTION 3 MON HISTOIRE - (max-width:1210px)--- */
+
+    .container_sect3 {
+        max-width: 965px;
+    }
 
     /* --- SECTION 4 CONCEPT- (max-width:1210px) --- */
     .concept {
@@ -1438,20 +1514,21 @@ footer p{
     
     .container_sect5 {
         width: 100%;
+        padding: 0;
     }
 
     .section5 h2 {
         margin-left: 56px;
     }
 
-    .filtre_ingredient {
-        width: 930px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
-    }
-
     .container_asterisque{
         padding-left: 56px;
+    }
+
+    .filtre_ingredient {
+        max-width: 850px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
     }
 
     /* --- SECTION 6 LOCALISATION- (max-width:1210px)--- */
@@ -1501,6 +1578,24 @@ footer p{
 
     /* --- SECTION - (max-width:980px) --- */
 
+    
+
+
+    /* --- HEADER - (max-width:980px)--- */
+    .img_header img {
+        padding: 0 52px;
+    }
+
+
+    .img_header img {
+        width: 770px;
+    }
+
+    .accroche {
+        font-size: 46px;
+    }
+
+
     /* --- SECTION 3 MON HISTOIRE - (max-width:980px)--- */
 
     /* --- SECTION 4 CONCEPT- (max-width:980px) --- */
@@ -1510,6 +1605,14 @@ footer p{
 
     .container_sect4 {
         margin-top: 192px;
+    }
+
+    .section4 {
+        padding-left: 0px;
+    }
+
+    .concept {
+        padding-left: 0px;
     }
     
     /* --- SECTION 5 CARTE- (max-width:980px) --- */
@@ -1532,7 +1635,9 @@ footer p{
         padding: 0 26px;
     }
 
-
+    .container_sect5 {
+        padding-left: 0px;
+    }
     
     /* --- SECTION 6 LOCALISATION - (max-width:980px)--- */
 

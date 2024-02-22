@@ -30,11 +30,11 @@ btn.addEventListener('click', () => {
     if(i === 0) {
         i++;
         TL.play();
-        iconeMenu.src = 'asset/image/croix.svg';
+        iconeMenu.src = 'asset/image/croix_5.svg';
     } else {
         i--;
         TL.reverse();
-        iconeMenu.src = 'asset/image/menu.svg';
+        iconeMenu.src = 'asset/image/menu_5.svg';
     }
 
 });
@@ -42,5 +42,5 @@ btn.addEventListener('click', () => {
 MenuListItem.forEach(item => item.addEventListener('click', () => {
     i--;
     TL.reverse();
-    iconeMenu.src = 'asset/image/menu.svg';
+    iconeMenu.src = 'asset/image/menu_5.svg';
 }));

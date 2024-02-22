@@ -15,12 +15,12 @@ require_once('./inc/header.php');
 <!-- LA CARTE -->
     <p class="carte_fixe boxAnim"><a href="#modal">Afficher la carte</a></p>
 <!-- NAV -->
-    <nav>
+    <!-- <nav>
         <a href="#" class="btn">
-            <img src="./asset/image/menu.svg" alt="menu icone" class="menuIcon">
+            <img src="./asset/image/menu_5.svg" alt="menu icone" class="menuIcon">
         </a>
         <p class="home"><a href="">o'bokit</a></p>
-    </nav>
+    </nav> -->
 
     <div class="conteneurMenu">
 
@@ -60,15 +60,12 @@ require_once('./inc/header.php');
         <!-- image en background -->
         <img src="./asset/image/obokit.png" alt="typographie o'bokit">
         <div class="accroche">
-            <p>Votre food truck </p>
-            <div class="animated-text">
+            <p>Votre food truck afro-caribéen</p>
+            <!-- <div class="animated-text">
                 <div class="line">afro-caribéen</div>
                 <div class="line">préféré</div>
                 <div class="line">à proximité</div>
-                <div class="line">afro-caribéen</div>
-                <div class="line">préféré</div>
-                <div class="line">à proximité</div>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="navColor">
@@ -624,7 +621,7 @@ require_once('./inc/header.php');
 <!-- FOOTER -->
 <footer>
     <div class="container_footer">
-        <p><a href="#modalMentionsLegales">mentions légales</a></p>
+        <p><a href="http://localhost/obokit_officiel/mentions_legales.php" target="_blank">mentions légales</a></p>
         <div class="reseaux">
             <div class="reseaux_icone" title="facebook - obokitfoodtruck">
                 <a href="https://www.facebook.com/obokitfoodtruck/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
@@ -634,13 +631,10 @@ require_once('./inc/header.php');
             </div>
             <div class="reseaux_icone" title="snapchat - obokitfoodtruck">
                 <a href="https://www.snapchat.com/obokitfoodtruck/"><i class="fa-brands fa-snapchat"></i></a>
-
             </div>
         </div>
     </div>
 </footer>
-
-
 
 
 <?php

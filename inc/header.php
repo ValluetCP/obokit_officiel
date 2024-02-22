@@ -21,6 +21,11 @@
     <script type="text/javascript" src="./accordeon.js"></script>
 
 </head>
-
+    <nav>
+        <a href="#" class="btn">
+            <img src="./asset/image/menu_5.svg" alt="menu icone" class="menuIcon">
+        </a>
+        <p class="home"><a href="">o'bokit</a></p>
+    </nav>
 <body>
     
