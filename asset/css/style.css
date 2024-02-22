@@ -36,6 +36,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
      --grisMoyen: #7C7C7C;
      --noirDore: #1E1C17;
      --imgVide: #44413A;
+
+     /* Autres Couleurs */
+     --vert1: #3F4F32;
      
 }
 
@@ -131,6 +134,64 @@ h2 span{
         background-color: var(--noirDore);
         color: var(--beige);
     }
+}
+
+/* MODAL CARTE */
+
+#modal {
+    position:fixed;
+    z-index:1000;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: #ebe6d79f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content {
+    position:relative;
+    /* width:30%; */
+    background:var(--vertFonceMoin);
+    padding: 42px;
+}
+
+/* .modalTitre {
+    color:var(--vertClair);
+}
+
+.modal-content p {
+    color:var(--vertClair);
+    margin:0;
+} */
+
+.modal-close {
+    display:block;
+    position:absolute;
+    top:10px;
+    right:10px;
+    font-size: 35px;
+    color: black;
+}
+
+#modal:not(:target) {
+    opacity:0;
+    visibility:hidden;
+    transition:0.5s;
+}
+
+#modal:target {
+    opacity:1;
+    visibility:visible;
+    transition:0.5s;
+}
+
+/* MODAL CARTE - image */
+.affiche_carte{
+    max-width: 1140px;
+    height: auto;
 }
 
 /* ----------------------- LA CARTE - FIN----------------------- */
@@ -293,12 +354,20 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .img_header img{
     width: 1300px;
     padding-left: 104px;
 }
+
+/* .img_header p{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    color: var(--vert1);
+    padding-top: 30px;
+} */
 
 .navColor{
     width: 104px;
@@ -308,6 +377,65 @@ nav{
     left: 0;
     background-color: var(--beige2);
 }
+
+/* ANIMATION PHRASE D'ACCROCHE */
+
+.accroche{
+    display: flex;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    color: var(--vert1);
+    padding-top: 30px;
+}
+
+.animated-text{
+    /* color: #fff; */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    background: transparent;
+    /* background: #2980b9; */
+    padding: 0 40px;
+    height: 65px;
+    overflow: hidden;
+}
+
+.line{
+    text-transform: uppercase;
+    /* text-align: center; */
+    /* font-size: 40px; */
+    line-height: 65px;
+}
+
+.line:first-child{
+    animation: anim 12s infinite;
+}
+
+@keyframes anim {
+    0%{
+        margin-top: 0;
+    }
+    16%{
+        margin-top: -60px;
+    }
+    33%{
+        margin-top: -120px;
+    }
+    50%{
+        margin-top: -180px;
+    }
+    66%{
+        margin-top: -240px;
+    }
+    82%{
+        margin-top: -300px;
+    }
+    100%{
+        margin-top: -360px;  
+    }
+}
+
 
 /* ----------------------- HEADER - FIN----------------------- */
 

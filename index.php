@@ -3,8 +3,17 @@ require_once('./inc/header.php');
 
 ?>
 
+<!-- MODAL CARTE -->
+    <div id="modal">
+        <div class="modal-content">
+            <a class="modal-close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+            <div class="affiche_carte">
+                <img src="./asset/image/menu_modal.jpg" alt="">
+            </div>
+        </div>
+    </div>
 <!-- LA CARTE -->
-    <p class="carte_fixe boxAnim"><a href="">Afficher la carte</a></p>
+    <p class="carte_fixe boxAnim"><a href="#modal">Afficher la carte</a></p>
 <!-- NAV -->
     <nav>
         <a href="#" class="btn">
@@ -49,7 +58,18 @@ require_once('./inc/header.php');
 <header>
     <div class="img_header">
         <!-- image en background -->
-        <img src="./asset/image/obokit.png" alt="">
+        <img src="./asset/image/obokit.png" alt="typographie o'bokit">
+        <div class="accroche">
+            <p>Votre food truck </p>
+            <div class="animated-text">
+                <div class="line">afro-caribéen</div>
+                <div class="line">préféré</div>
+                <div class="line">à proximité</div>
+                <div class="line">afro-caribéen</div>
+                <div class="line">préféré</div>
+                <div class="line">à proximité</div>
+            </div>
+        </div>
     </div>
     <div class="navColor">
 
