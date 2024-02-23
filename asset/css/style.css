@@ -1424,6 +1424,10 @@ footer p{
        padding: 0;
     }
 
+    .bg_header{
+        display: none;
+    }
+
     /* --- SECTION 3 MON HISTOIRE - (max-width:1400px) --- */
     .container_sect3 {
         grid-template-columns: 1fr;

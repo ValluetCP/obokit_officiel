@@ -175,7 +175,7 @@ require_once('./inc/header.php');
                 <div class="filtre_ingredient" id="list_bowl">
                     <figure class="legume">
                         <div class="fond_noir">
-                            <img src="./asset/image/bowl_vegan_uber.JPG" alt="">
+                            <img src="./asset/image/bowl_vegan_uber.JPG" alt="bowl vegan">
                         </div>
                         <h4>Végétarien</h4>
                         <p>*Sauce chien, mélange de légumes marinés, banane plantain, crudités et avocat.</p>
@@ -191,7 +191,7 @@ require_once('./inc/header.php');
 
                     <figure class="poisson">
                         <div class="fond_noir">
-                            <img src="./asset/image/bowl_morue_uber.JPG" alt="">
+                            <img src="./asset/image/bowl_morue_uber.JPG" alt="bowl morue">
                         </div>
                         <h4>MORUE</h4>
                         <p>*Sauce chien, banane plantain, crudités et avocat.</p>
