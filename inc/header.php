@@ -21,11 +21,64 @@
     <script type="text/javascript" src="./accordeon.js"></script>
 
 </head>
+<body>
+
+    <!-- MODAL CARTE -->
+    <div id="modal">
+        <div class="modal-content">
+            <a class="modal-close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+            <div class="affiche_carte">
+                <img src="./asset/image/menu_modal.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- LA CARTE -->
+    <p class="carte_fixe boxAnim"><a href="#modal">Afficher la carte</a></p>
+
+    <!-- NAV -->
     <nav>
         <a href="#" class="btn">
             <img src="./asset/image/menu_5.svg" alt="menu icone" class="menuIcon">
         </a>
-        <p class="home"><a href="">o'bokit</a></p>
+        <p class="home"><a href="http://localhost/obokit_officiel/">o'bokit</a></p>
     </nav>
-<body>
+    
+
+    <!-- MENU DEROULANT -->
+    <div class="conteneurMenu">
+
+        <ul class="listeMenu">
+
+            <li class="MenuListItem">
+                <a class="itemListe" href="#histoire">notre histoire <br><span>atif saade raconte son chemin jusqu’à vos assiettes</span></a>
+            </li>
+
+            <li class="MenuListItem">
+                <a class="itemListe" href="#concept">le concept <br><span>de la street food afro-caribéenne cuisiné avec amour</span></a>
+            </li>
+
+            <li class="MenuListItem">
+                <a class="itemListe" href="#carte">notre carte <br><span>retrouvez toutes nos spécialités</span></a>
+            </li>
+
+            <li class="MenuListItem">
+                <a class="itemListe" href="#localiser">nous localiser<br><span>suivez nos déplacements  //  lieux et horaires</span></a>
+            </li>
+
+            <li class="MenuListItem">
+                <a class="itemListe" href="#services">nos prestations & services<br><span>o’bokit prend place à vos événements  et facilite vos commandes</span></a>
+            </li>
+
+            <li class="MenuListItem">
+                <a class="itemListe" href="#contact">nous contacter<br><span>joignez-nous et restez connecté</span></a>
+            </li>
+            
+        </ul>
+
+    </div>
+    
+    <!-- NAV COLOR -->
+    <div class="navColor"></div>
+
     

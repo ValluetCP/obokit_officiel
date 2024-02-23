@@ -370,6 +370,15 @@ nav{
     padding-top: 30px;
 } */
 
+.bg_header{
+    width: 104px;
+    height: 100vh;
+    background-color: var(--beige2);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .navColor{
     width: 104px;
     height: 100%;
@@ -734,20 +743,19 @@ figure.hide {
 
 .filtre_ingredient figure {
     width: 276px;
-    border: 10px solid transparent;
-    background-color: transparent;
+    border: 10px solid var(--beige2);
+    background-color: var(--beige2);
     border-radius: 22px;
     margin: auto;
     margin-bottom: 20px;
 }
 
-.filtre_ingredient figure:hover{
+/* .filtre_ingredient figure:hover{
     width: 276px;
-    /* margin-bottom: 65px; */
     border: 10px solid var(--beige2);
     background-color: var(--beige2);
     border-radius: 22px;
-}
+} */
 
 .center{
     display: flex;
@@ -761,10 +769,9 @@ figure.hide {
 .fond_noir {
     width: 100%;
     height: 275px;
-    background-color: var(--beige2);
+    background-color: var(--beige3);
     border-radius: 12px;
     margin-bottom: 20px;
-    
 }
 
 .fond_noir img {
@@ -801,16 +808,18 @@ figure.hide {
 } */
 
 
-.asterisque{
+.asterisque {
     font-family: 'bebas', sans-serif;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    color: #7e7e7e;
 }
 
-.asterisque span{
+.asterisque span {
     font-weight: 600;
+    color: black;
 }
 
 /* .contenant{
@@ -837,6 +846,15 @@ figure.hide {
     text-transform: uppercase;
     font-weight: 400;
     color: white;
+}
+
+
+.menuPdf:hover {
+    background-color: var(--beigeDoree);
+}
+
+.menuPdf a:hover{
+    color: var(--noirDore);
 }
 
 
@@ -1091,6 +1109,13 @@ figure.hide {
     padding-top: 15px;
 }
 
+/* ICONE */
+
+.service_img{
+    display: flex;
+    align-items: center;
+}
+
 /* ---------------------------- SECTION 8 - FIN ---------------------------- */
 
 
@@ -1259,22 +1284,17 @@ footer p{
 
 
 /* ---------------------- SECTION - MENTIONS LEGALES - DEBUT ---------------------- */
-.container_mentionsLegales{
-    /* min-width: 1920px;
-    height: 100%; */
-    width: 100%;
-    min-height: 100%;
-    background-image: url(../image/mention_bg.png);
-    position: fixed;
+
+
+.grid_mention{
+    grid-area: gauche;
     display: grid;
-    grid-template-columns: 104px 50% auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 90px;
 }
 
-.bg_nav{
-    height: 100%;
-    background-color: var(--beige2);
-}
 
+/* PARTIE TEXTE */
 .sect_mention h2 {
     font-family: 'Bebas Neue', sans-serif;
     color: var(--textNoir);
@@ -1287,15 +1307,8 @@ footer p{
 
 .sect_mention {
     background-color: var(--beige2);
-    /* border-radius: 20px; */
-    padding: 20px 100px;
-    /* padding-left: 200px; */
-}
-
-.grid_mention{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 90px;
+    padding: 20px 250px;
+    min-height: 100vh;
 }
 
 .txt_mention{
@@ -1490,6 +1503,13 @@ footer p{
     .container_sect9 {
         padding: 0 30px;
     }
+
+    /* --- SECTION - MENTIONS LEGALES - (max-width:1400px) --- */
+    .sect_mention {
+        padding-top: 110px;
+    }
+
+
 }
 
 
@@ -1498,6 +1518,11 @@ footer p{
 
     /* --- SECTION - (max-width:1210px) --- */
 
+    
+    /* --- HEADER - (max-width:1210px)--- */
+    .img_header img {
+        width: 870px;
+    }
 
     /* --- SECTION 3 SECTION 3 MON HISTOIRE - (max-width:1210px)--- */
 
@@ -1564,9 +1589,13 @@ footer p{
         margin: auto;
     }
 
-    /* --- HEADER - (max-width:1210px)--- */
-    .img_header img {
-        width: 870px;
+
+    /* --- SECTION - MENTIONS LEGALES - (max-width:1210px) --- */
+
+    .sect_mention {
+        padding: 20px 105px;
+        padding-top: 108px;
+        padding-left: 170px;
     }
     
 }
@@ -1678,6 +1707,12 @@ footer p{
 
     .sect_mention h2 span {
         font-size: 84px;
+    }
+
+    .sect_mention {
+        padding-top: 108px;
+        padding-left: 40px;
+        padding-right: 20px;
     }
 
 }
@@ -1850,6 +1885,15 @@ footer p{
     .grid_mention{
         grid-template-columns: 1fr;
         grid-gap: 0px;
+    }
+
+    .sect_mention h2 span {
+        font-size: 73px;
+    }
+
+    .sect_mention h2 span {
+        font-size: 83px;
+        line-height: 80px;
     }
 
 }

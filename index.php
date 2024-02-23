@@ -4,25 +4,25 @@ require_once('./inc/header.php');
 ?>
 
 <!-- MODAL CARTE -->
-    <div id="modal">
-        <div class="modal-content">
-            <a class="modal-close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
-            <div class="affiche_carte">
-                <img src="./asset/image/menu_modal.jpg" alt="">
-            </div>
+<!-- <div id="modal">
+    <div class="modal-content">
+        <a class="modal-close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <div class="affiche_carte">
+            <img src="./asset/image/menu_modal.jpg" alt="">
         </div>
     </div>
+</div> -->
 <!-- LA CARTE -->
-    <p class="carte_fixe boxAnim"><a href="#modal">Afficher la carte</a></p>
+<!-- <p class="carte_fixe boxAnim"><a href="#modal">Afficher la carte</a></p> -->
 <!-- NAV -->
-    <!-- <nav>
+<!-- <nav>
         <a href="#" class="btn">
             <img src="./asset/image/menu_5.svg" alt="menu icone" class="menuIcon">
         </a>
         <p class="home"><a href="">o'bokit</a></p>
     </nav> -->
 
-    <div class="conteneurMenu">
+<!-- <div class="conteneurMenu">
 
         <ul class="listeMenu">
 
@@ -52,7 +52,7 @@ require_once('./inc/header.php');
             
         </ul>
 
-    </div>
+    </div> -->
 
 <!-- HEADER -->
 <header>
@@ -67,9 +67,9 @@ require_once('./inc/header.php');
                 <div class="line">à proximité</div>
             </div> -->
         </div>
-    </div>
-    <div class="navColor">
-
+        <div class="bg_header">
+    
+        </div>
     </div>
 </header>
 
@@ -105,7 +105,7 @@ require_once('./inc/header.php');
     <!-- texte & image -->
     <div class="container_sect4">
         <p class="sect4_txt">
-            Tout droit sorti de Guadeloupe, le bokit est un pain chaud frit. Granit comme un sandwich, O’bokit vous propose des recettes revisitées mêlant les plats traditionnels d’Afrique de l’Ouest à celles des caraïbes. Découvrez des saveurs réconfortantes voire dépaysantes pour certains, le tout dans une ambiance chaleureuse et conviviale à l’image de ses communautés.
+            Tout droit sorti de Guadeloupe, le bokit est un pain chaud frit. Garnit comme un sandwich, O’bokit vous propose des recettes revisitées mêlant les plats traditionnels d’Afrique de l’Ouest à celles des caraïbes. Découvrez des saveurs réconfortantes voire dépaysantes pour certains, le tout dans une ambiance chaleureuse et conviviale à l’image de ses communautés.
         </p>
         <div class="sect4_img_camion">
             <img src="./asset/image/bokit-jambon-fromage-et-camion2.jpg" alt="">
@@ -553,7 +553,9 @@ require_once('./inc/header.php');
             <div class="service_txt">livraison</div>
         </div>
         <div class="service">
-            <div class="service_img"></div>
+            <div class="service_img">
+                <img src="./asset/image/panier.png" alt="">
+            </div>
             <div class="service_txt">à emporter</div>
         </div>
         <div class="service">

@@ -4,7 +4,6 @@
 ?>
 
     <div class="container_mentionsLegales">
-        <div class="bg_nav"></div>
         <div class="sect_mention">
             <h2>o'bokit<br><span>Mentions légales</span></h2>
 
@@ -104,10 +103,24 @@
                 </div>
             </div>
         </div>
-        <div class="bg_vide">
-
-        </div>
     </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container_footer">
+            <p><a href="http://localhost/obokit_officiel/" target="_blank">retour accueil</a></p>
+            <div class="reseaux">
+                <div class="reseaux_icone" title="facebook - obokitfoodtruck">
+                    <a href="https://www.facebook.com/obokitfoodtruck/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div class="reseaux_icone" title="instagram - obokitfoodtruck">
+                    <a href="https://www.instagram.com/obokitfoodtruck/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="reseaux_icone" title="snapchat - obokitfoodtruck">
+                    <a href="https://www.snapchat.com/obokitfoodtruck/"><i class="fa-brands fa-snapchat"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 <?php
 require_once('./inc/footer.php');
