@@ -556,7 +556,7 @@ nav{
     width: 100%;
     min-height: 770px;
     background-color: white;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .container_sect5 {
@@ -569,7 +569,7 @@ nav{
     font-family: 'Bebas Neue', sans-serif;
     color: var(--textNoir);
     font-size: 28px;
-    margin-bottom: 76px;
+    margin-bottom: 32px;
     letter-spacing: 1px;
     margin-top: 50px;
     font-weight: 400;
