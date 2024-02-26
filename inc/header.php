@@ -14,11 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="../menu_test/menu.css"> -->
     <link rel="stylesheet" href="./asset/css/style.css">
-    <link rel="stylesheet" href="lightbox.css" />
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/lightbox.js"></script>
-    <script type="text/javascript" src="./site.js"></script>
-    <script type="text/javascript" src="./accordeon.js"></script>
 
 </head>
 <body>

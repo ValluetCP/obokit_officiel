@@ -1508,6 +1508,11 @@ footer p{
         padding: 0 30px;
     }
 
+    /* --- FOOTER - (max-width:1400px) --- */
+    footer p {
+        padding-left: 0px;
+    }
+    
     /* --- SECTION - MENTIONS LEGALES - (max-width:1400px) --- */
     .sect_mention {
         padding-top: 110px;
@@ -1630,6 +1635,15 @@ footer p{
 
 
     /* --- SECTION 3 MON HISTOIRE - (max-width:980px)--- */
+    .sect3_img {
+        max-width: 614px;
+        height: 635px;
+    }
+
+    .sect3_img img {
+        width: 100%;
+        height: auto;
+    }
 
     /* --- SECTION 4 CONCEPT- (max-width:980px) --- */
     .concept {
@@ -1737,7 +1751,7 @@ footer p{
     
     /* --- SECTION 3 MON HISTOIRE - (max-width:700px)--- */
     .sect3_img {
-        height: 470px;
+        height: auto;
     }
 
     /* --- SECTION 4 CONCEPT- (max-width:700px) --- */
